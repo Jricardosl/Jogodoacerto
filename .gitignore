@@ -1,0 +1,22 @@
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos temporários de editores
+*.log
+*.tmp
+*.swp
+
+# VS Code
+.vscode/
+
+# Node.js (caso use futuramente)
+node_modules/
+
+# Pastas de build ou dist (se usar bundlers depois)
+dist/
+build/
+
+# Backup automático
+*~
