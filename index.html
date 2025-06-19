@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogo Acerto o Número</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <h1>🎯 Jogo Acerto o Número</h1>
+
+  <label for="nivel">Escolha o nível:</label>
+  <select id="nivel" onchange="configurarJogo()">
+    <option value="facil">Fácil (1-10)</option>
+    <option value="medio">Médio (1-50)</option>
+    <option value="dificil">Difícil (1-100)</option>
+  </select>
+
+  <br><br>
+  <input type="number" id="palpite" placeholder="Digite seu palpite" disabled>
+  <br>
+  <button onclick="verificarPalpite()" disabled id="botaoTentar">Tentar</button>
+  <button onclick="reiniciarJogo()">🔁 Reiniciar</button>
+
+  <p id="resultado"></p>
+  <p id="tentativas"></p>
+
+  <!-- Áudios -->
+  <audio id="audioVitoria" src="audio/vitoria.mp3"></audio>
+  <audio id="audioDerrota" src="audio/derrota.mp3"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
